@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">    
+  <head>
+    <meta charset="UTF-8">
+    <title>Mechanical coder</title>
+    <link rel="stylesheet" href="styles.css"/>   
+  </head>
+  <body>
+    <header id="header">
+      <img src="img/logo_tienda_PLP.jpeg" id="header-img">
+      <nav id="nav-bar">
+        <ul>
+          <a class="nav-link" href="#h1">Home</a></li>
+          <a class="nav-link" href="#keyboard">Keyboard</a></li>
+          <a class="nav-link" href="#mouse">Mouse</a></li>
+          <a class="nav-link" href="#form">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="framing">
+      <h1 id="h1"> Keyboards and mice for all types of computers </h1>
+    <p>It's a video of some keyboards and mouse that we do NOT sell but it would be cool for you to see that they are not as good as ours.</p>
+    <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/tte4FTLL5rE?si=bcYs9_6_o-mbZ8vn" title="5 Good, nice and cheap Peripherals" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <!--<iframe id="video" width="420" height="340" src="https://www.youtube.com/watch?v=tte4FTLL5rE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+    <h2>Keyboards</h2>
+      <section id="keyboard"> 
+        <div> <img src="img/keyboards/Key1.jpeg" alt="key1"> Keyboard one </div>
+        <div> <img src="img/keyboards/key2.jpeg" alt="key2"> Keyboard two </div>
+        <div> <img src="img/keyboards/key3.jpeg" alt="key3"> Keyboard three </div>
+        <div> <img src="img/keyboards/key4.jpeg" alt="key4"> Keyboard four </div>
+        <div> <img src="img/keyboards/key5.jpeg" alt="key5"> Keyboard five </div>
+        <div> <img src="img/keyboards/key6.jpeg" alt="key6"> Keyboard six </div>
+        <div> <img src="img/keyboards/key7.jpeg" alt="key7"> keyboard seven </div>
+        <div> <img src="img/keyboards/key8.jpeg" alt="key8"> keyboard eight </div>
+        <div> <img src="img/keyboards/key9.jpeg" alt="key9"> keyboard nine </div>
+        <div class="tag">The keyboards are handmade and vary in number of keys and switches.</div>
+      </section>
+    <h2>Mouse</h2>
+      <section id="mouse">
+        <div> <img src="img/mouses/mou1.jpeg" alt="mou1"> Mouse one </div>
+        <div> <img src="img/mouses/mou2.jpeg" alt="mou2"> Mouse two </div>
+        <div> <img src="img/mouses/mou3.jpeg" alt="mou3"> Mouse three </div>
+        <div> <img src="img/mouses/mou4.jpeg" alt="mou4"> Mouse four </div>
+        <div> <img src="img/mouses/mou5.jpeg" alt="mou5"> Mouse five </div>
+        <div> <img src="img/mouses/mou6.jpeg" alt="mou6"> Mouse six </div>
+        <div> <img src="img/mouses/mou7.jpeg" alt="mou7"> Mouse seven </div>
+        <div> <img src="img/mouses/mou8.jpeg" alt="mou8"> Mouse eight </div>
+        <div> <img src="img/mouses/mou9.jpeg" alt="mou9"> Mouse nine </div>
+        <div class="tag"> The mouse are not handmade, some company in Latam must have made them, I don't know. </div>
+      </section>
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <fieldset>
+        <label id="name-label" for="first-name">Name and last
+            name: <input class="data"
+                id="name" name="first-name" type="text"
+                placeholder="Name and last name"
+                required /></label>
+        <label for="email">Your Email: <input type="email"
+                class="data"
+                id="email"
+                name="email" type="email"
+                placeholder="Your email"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                required /></label>
+        <label for="summary">You can choose a product by its number or if you want a personalised one let us know.
+            <textarea id="summary" name="summary" rows="4"
+                cols="40"
+                placeholder="My dream project is"></textarea>
+        </label>
+        <label id="submit-label" for="submit">
+        <input type="submit" id="submit" value="Enviar" action="https://www.freecodecamp.com/email-submit" method="post"></input>
+          </label>
+        </fieldset>
+    </form>
+    </div>
+  </body>
+  </html>

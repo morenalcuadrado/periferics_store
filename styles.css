@@ -1,0 +1,182 @@
+/* Define your color palette as variables */
+:root {
+  --dark-blue: #0d0221;
+  --mid-blue: #0f084b;
+  --light-blue: #26408b;
+  --gray-light: #a6cfd5;
+  --gray-lighter: #c2e7d9;
+}
+
+/* Style the body */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: var(--dark-blue);
+  color: var(--gray-lighter);
+}
+
+/* Style the header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--mid-blue);
+  position: fixed; /* Keep it at the top */
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* Style the logo image (assuming you'll add it later) */
+#header-img {
+  width: 45px; /* Adjust as needed */
+}
+
+/* Style the navigation bar */
+#nav-bar {
+  display: flex;
+  list-style: none;
+  margin: 10px;
+  padding: 0;
+}
+
+/* Style the navigation links */
+.nav-link {
+  margin: 0 1rem;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: var(--gray-lighter);
+}
+
+/* Style the navigation links on hover */
+.nav-link:hover {
+  background-color: var(--light-blue);
+  color: white;
+}
+
+#framing {
+  margin: 10px;
+}
+
+h1 {
+  margin-top: 85px;
+  text-align: center;
+}
+
+p {
+  text-align: justify;
+}
+
+#video {
+  display: block;
+  align-items: center;
+}
+
+#keyboard,
+#mouse > div {
+  text-align: center;
+}
+
+#keyboard,
+#mouse {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px 10px;
+}
+
+#keyboard img {
+  order: 1;
+  width: 100%;
+  max-width: 250px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2.3px solid var(--mid-blue);
+}
+
+#mouse img {
+  order: 1;
+  width: 100%;
+  max-width: 250px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2.3px solid var(--mid-blue);
+}
+
+.tag {
+  display: flex;
+  flex-direction: column;
+  order: 2;
+  /*flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;*/
+}
+section,
+fieldset,
+input,
+keyboard,
+mouse {
+  color: var(--dark-blue);
+  border-color: var(--mid-blue);
+}
+
+/* Apply some basic styles to sections and forms */
+section,
+form {
+  padding: 2rem;
+  background-color: var(--gray-light);
+  margin-bottom: 2rem;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+.data,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+
+/* Style the video iframe */
+#video {
+  margin: 0 auto; /* Center the video horizontally */
+}
+
+@media (max-width: 1000px) and (min-width: 167px) {
+  :root {
+    --dark-blue: #000;
+    --mid-blue: #000;
+    --light-blue: #000;
+    --gray-light: #000;
+    --gray-lighter: #777;
+  }
+
+  h1 {
+    margin-top: 135px;
+    text-align: center;
+  }
+  section,
+  keyboard,
+  mouse {
+    color: var(--gray-lighter);
+  }
+
+  fieldset,
+  input {
+    color: var(--gray-lighter);
+    border-color: var(--gray-lighter);
+  }
+}
